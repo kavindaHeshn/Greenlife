@@ -1,0 +1,104 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+   
+    background: black;
+    position: relative;
+}
+
+/* Header (Navbar) Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 15px 0; /* Reduced padding for a sleeker look */
+}
+
+/* Navigation Container */
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 55px;
+    width: auto;
+    display: block;
+}
+
+/* Nav Menu */
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+    margin: 0; /* Remove default margin */
+}
+
+/* Nav Links */
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 800;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Hover underline effect */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 0;
+    background: #c1c139;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #c9cb44;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Login Button */
+.login-btn a {
+    background: #368037;
+    color: black !important;
+    font-weight: bold;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: background 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+.login-btn a:hover {
+    background: white;
+    color: #2c8a4f !important;
+}
